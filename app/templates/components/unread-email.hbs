@@ -1,0 +1,12 @@
+
+
+{{#if isRead}}
+<li onclick={{action markAsRead}} style="font-weight:bold"> {{title}} </li>
+{{else}}
+<li onclick={{action markAsRead}} style="font-weight:lighter"> {{title}} </li>
+{{/if}}
+
+
+
+
+{{yield}}

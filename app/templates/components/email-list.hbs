@@ -1,0 +1,10 @@
+
+<div style="font-size: 48pt; margin-bottom: 100px; "> u have 1000000 unread emails <hr></div>
+
+{{#each emails as |email|}}
+
+{{unread-email title=email.title isRead=email.read markAsRead=(action "markAsRead" email.post)}}
+<br>
+{{/each}}
+
+{{yield}}
